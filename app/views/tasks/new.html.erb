@@ -1,0 +1,21 @@
+<h1>Edit tasks</h1>
+<ul>
+<%= form_for(@task) do |f| %>
+ <li> <%= f.label :title %>
+  <%= f.text_field :title %>
+
+</li>
+<li>
+    <%= f.label :details %>
+  <%= f.text_field :details %>
+<h4>
+  <%= f.submit %> </li>
+  </h4>
+<% end %>
+
+
+</ul>
+
+
+
+<%= link_to "Back to list",tasks_path,class:"btn btn-primary"%>
